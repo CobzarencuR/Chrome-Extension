@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-div">
+            <img src="lock-image.png">
+        </div>
+        <section class="settings-container">
+            <div class="setting">
+                <span class="extension-text">Your extension</span>
+                <span></span>
+            </div>
+            <div class="setting">
+                <label for="check1">
+                    <span>Ask a question</span>
+                    <span></span>
+                </label>
+                <input type="checkbox" id="check1"> <!--onchange="toggleChatElements()"-->
+            </div>
+            <div id="chat-box">
+                <div id="chat-messages"></div>
+                <div>
+                    <textarea type="text" id="message-input" placeholder="Type your message..."
+                        oninput="adjustTextAreaHeight()"></textarea>
+                </div>
+                <button id="send-button"><img class="send-icon" src="send-image.png"></button>
+            </div>
+            <div class="setting">
+                <label for="check2">
+                    <span>Password Manager</span>
+                    <span></span>
+                </label>
+                <input type="checkbox" id="check2">
+            </div>
+            <div id="email-box">
+                <div id="manager-messages"></div>
+                <div>
+                    <textarea type="text" id="email-input" placeholder="Type your email..."
+                        oninput="adjustTextAreaHeight()"></textarea>
+                </div>
+                <button id="send-email-button"><img class="send-email-icon" src="send-image.png"></button>
+            </div>
+            <!--password-->
+            <div id="password-box">
+                <div>
+                    <textarea type="text" id="password-input" placeholder="Type your password..."
+                        oninput="adjustTextAreaHeight()"></textarea>
+                </div>
+                <button id="send-password-button"><img class="send-password-icon" src="send-image.png"></button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

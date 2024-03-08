@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "My extension",
+    "description": "Our first chrome extension",
+    "version": "1.0.0",
+    "action": {
+        "32": "lock-32.png",
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}
